@@ -90,7 +90,7 @@ export default function UserSetup({ onComplete, existingProfile }: UserSetupProp
           <User className="h-6 w-6 text-green-600" />
           <CardTitle className="text-2xl">{existingProfile ? "Update Your Profile" : "Set Up Your Profile"}</CardTitle>
         </div>
-        <p className="text-gray-600">We'll calculate your daily calorie needs</p>
+        <p className="text-gray-600">We&apos;ll calculate your daily calorie needs</p>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-6">

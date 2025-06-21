@@ -39,9 +39,11 @@ export default function ManualInput({ onSubmit, onCancel, isLoading }: ManualInp
       <div className="text-center space-y-2">
         <div className="flex items-center justify-center gap-2 text-orange-600">
           <AlertCircle className="h-5 w-5" />
-          <h2 className="text-xl font-semibold">Couldn't detect the food?</h2>
+          <h2 className="text-xl font-semibold">Couldn&apos;t detect the food?</h2>
         </div>
-        <p className="text-gray-600">No worries! Describe what you're eating and we'll estimate the calories.</p>
+        <p className="text-gray-600">
+          No worries! Describe what you&apos;re eating and we&apos;ll estimate the calories.
+        </p>
       </div>
 
       {/* Input Form */}

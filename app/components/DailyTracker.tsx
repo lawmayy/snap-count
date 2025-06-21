@@ -50,7 +50,7 @@ export default function DailyTracker({
           <div className="flex justify-between items-center mb-4">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 text-green-600" />
-              <h2 className="text-xl font-semibold">Today's Progress</h2>
+              <h2 className="text-xl font-semibold">Today&apos;s Progress</h2>
             </div>
             <Button onClick={onEditProfile} variant="outline" size="sm">
               <Settings className="h-4 w-4 mr-2" />
@@ -107,7 +107,7 @@ export default function DailyTracker({
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <Target className="h-5 w-5 text-green-600" />
-            Today's Food Log
+            Today&apos;s Food Log
           </CardTitle>
         </CardHeader>
         <CardContent>

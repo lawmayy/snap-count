@@ -98,7 +98,7 @@ Assume a typical serving size for the described food. Be as accurate as possible
       nutritionData.confidence = Math.round(nutritionData.confidence * 100) / 100
 
       return NextResponse.json(nutritionData)
-    } catch (parseError) {
+    } catch {
       console.error("Failed to parse Gemini response:", text)
       return NextResponse.json({
         error: "Could not analyze the food. Please try describing it manually.",

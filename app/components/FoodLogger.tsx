@@ -8,6 +8,7 @@ import ResultsDisplay from "./ResultsDisplay"
 import ManualInput from "./ManualInput"
 import type { NutritionData } from "../page"
 import { useEffect, useState } from "react"
+import Image from "next/image"
 
 interface FoodLoggerProps {
   uploadedImage: string | null
@@ -66,10 +67,12 @@ export default function FoodLogger({
         <Card className="bg-white/80 backdrop-blur-sm">
           <CardContent className="p-6">
             <div className="text-center space-y-4">
-              <img
+              <Image
                 src={uploadedImage || "/placeholder.svg"}
                 alt="Uploaded food"
-                className="max-w-full max-h-96 mx-auto rounded-lg shadow-md"
+                width={400}
+                height={300}
+                className="max-w-full max-h-96 mx-auto rounded-lg shadow-md object-contain"
               />
               <div className="flex gap-3 justify-center">
                 <Button

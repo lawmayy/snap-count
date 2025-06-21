@@ -210,10 +210,6 @@ export default function HomePage() {
   const totalCalories = dailyEntries.reduce((sum, entry) => sum + entry.calories, 0)
   const remainingCalories = userProfile ? userProfile.daily_calorie_goal - totalCalories : 0
 
-  const handleResultsUpdate = (newData: NutritionData) => {
-    setResults(newData)
-  }
-
   if (currentView === "setup") {
     return (
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
@@ -223,7 +219,7 @@ export default function HomePage() {
               <Zap className="h-8 w-8 text-green-600" />
               <h1 className="text-4xl font-bold text-gray-900">SnapCount</h1>
             </div>
-            <p className="text-xl text-gray-600 mb-2">Let's calculate your daily calorie needs</p>
+            <p className="text-xl text-gray-600 mb-2">Let&apos;s calculate your daily calorie needs</p>
           </div>
 
           <UserSetup onComplete={handleUserSetup} existingProfile={userProfile} />
