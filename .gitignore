@@ -1,7 +1,11 @@
 .env
+.env.local
 
 # Node.js
 node_modules/
+
+# Next.js
+.next/
 
 # OS files
 .DS_Store
