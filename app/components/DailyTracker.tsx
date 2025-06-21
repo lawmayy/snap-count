@@ -98,7 +98,7 @@ export default function DailyTracker({
             <Plus className="h-5 w-5 mr-2" />
             Add Food
           </Button>
-          <p className="text-sm text-gray-600 mt-2">Upload a photo or describe what you're eating</p>
+          <p className="text-sm text-gray-600 mt-2">Upload a photo or describe what you&apos;re eating</p>
         </CardContent>
       </Card>
 
